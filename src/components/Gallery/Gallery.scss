@@ -1,0 +1,22 @@
+.c-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: calc(46% - 4px);
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 2%;
+        background-color: rgb(101, 132, 160);
+        border: 2px solid;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        color: #333;
+        &--left {
+            flex-direction: row-reverse;
+        }
+    }
+    &__img{
+        object-fit: cover;
+    }
+}
